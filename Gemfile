@@ -28,10 +28,10 @@ gem 'nokogiri'                # Client::Search::*Scraper
 gem 'net-dns'                 # dns_cache_snoop
 gem 'dnsruby'                 # dns_zone_transfer
 gem 'em-resolv-replace'       # dns_brute_sub
-gem 'whois'                   # dns_zone_transfer, whois
-gem 'googleajax'              # search_google
+gem 'whois'                   , '>= 3.6.5' # dns_zone_transfer, whois
+gem 'googleajax'              , '>= 1.0.1' # search_google
 gem 'geoip'                   # geolocate_host
-gem 'shodan'                  # search_shodan
+gem 'shodan'                  , '>= 1.0.0' # search_shodan
 gem 'towerdata_api'                  # search_towerdata
 gem 'yomu'                    # uri_spider
 gem 'gmail'                   # email_bounceback
@@ -46,7 +46,7 @@ gem 'couchrest'
 gem 'net-ssh'
 gem 'fog'
 gem 'fog-google',   :git => 'https://github.com/fog/fog-google.git'
-gem 'google-api-client', '< 0.9', '>= 0.6.2'
+gem 'google-api-client', '>= 0.8.6', '< 0.9'
 
 gem 'foreman'
 gem 'pry'                     # Debugging
