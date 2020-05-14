@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
-gem 'sinatra'                 # API
-gem 'sinatra-contrib'         # API
+gem 'sinatra'                 , '>= 2.0.0' # API
+gem 'sinatra-contrib'         , '>= 2.0.0' # API
 gem 'puma'                    # Application Server
 gem 'redis'                   # Redis
 gem 'redis-namespace'
@@ -19,8 +19,8 @@ gem 'elasticsearch'           # Database
 gem 'iconv'                   # Encoding
 gem 'rest-client'             # Web hooks, some tasks
 gem 'rspec'                   # Testing
-gem 'rack-test'               # Testing
-gem 'rack-protection'         # https://github.com/sinatra/rack-protection
+gem 'rack-test'               , '>= 0.6.3' # Testing
+gem 'rack-protection'         , '>= 1.5.3' # https://github.com/sinatra/rack-protection
 gem 'intrigue_api_client', :git => 'https://github.com/intrigueio/intrigue_api_client.git'
 gem 'nokogiri'                # Client::Search::*Scraper
 
