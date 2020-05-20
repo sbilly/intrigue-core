@@ -28,7 +28,7 @@ gem 'nokogiri'                # Client::Search::*Scraper
 gem 'net-dns'                 # dns_cache_snoop
 gem 'dnsruby'                 # dns_zone_transfer
 gem 'em-resolv-replace'       # dns_brute_sub
-gem 'whois'                   # dns_zone_transfer, whois
+gem 'whois'                   , '>= 3.6.5' # dns_zone_transfer, whois
 gem 'googleajax'              # search_google
 gem 'geoip'                   # geolocate_host
 gem 'shodan'                  # search_shodan
@@ -46,7 +46,7 @@ gem 'couchrest'
 gem 'net-ssh'
 gem 'fog'
 gem 'fog-google',   :git => 'https://github.com/fog/fog-google.git'
-gem 'google-api-client', '< 0.9', '>= 0.6.2'
+gem 'google-api-client', '>= 0.8.6', '< 0.9'
 
 gem 'foreman'
 gem 'pry'                     # Debugging
