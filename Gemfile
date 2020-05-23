@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 gem 'sinatra'                 # API
 gem 'sinatra-contrib'         # API
-gem 'puma'                    # Application Server
+gem 'puma'                    , '>= 3.12.6' # Application Server
 gem 'redis'                   # Redis
 gem 'redis-namespace'
 gem 'eventmachine'
