@@ -22,7 +22,7 @@ gem 'rspec'                   # Testing
 gem 'rack-test'               # Testing
 gem 'rack-protection'         # https://github.com/sinatra/rack-protection
 gem 'intrigue_api_client', :git => 'https://github.com/intrigueio/intrigue_api_client.git'
-gem 'nokogiri'                # Client::Search::*Scraper
+gem 'nokogiri'                , '>= 1.11.0' # Client::Search::*Scraper
 
 # Tasks
 gem 'net-dns'                 # dns_cache_snoop
@@ -44,7 +44,7 @@ gem 'whoisology', :git => 'https://github.com/pentestify/whoisology.git'
 # Handlers
 gem 'couchrest'
 gem 'net-ssh'
-gem 'fog'
+gem 'fog', '>= 1.35.0'
 gem 'fog-google',   :git => 'https://github.com/fog/fog-google.git'
 gem 'google-api-client', '< 0.9', '>= 0.6.2'
 
